@@ -24,8 +24,7 @@ function Section5() {
                      <h4>Download mobile App and</h4>
                      <h2>save up to 20%</h2>
                      <p>
-                        Aliquam a augue suscipit, luctus neque purus ipsum and neque
-                        dolor primis libero tempus, blandit varius
+                        Unlock exclusive savings! Download our mobile app now and enjoy a special 20% discount on your next order.
                      </p>
                      <Link to="/">
                         <img

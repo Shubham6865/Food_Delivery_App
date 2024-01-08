@@ -27,7 +27,7 @@ const Cardss = ({ image, rating, title, paragraph, price, renderRatingIcons }) =
           <div className="d-flex align-items-center justify-content-between">
             <div className="menu_price">
               <h5 className='mb-0'>
-                ${price}
+                {price} Rs
               </h5>
 
             </div>

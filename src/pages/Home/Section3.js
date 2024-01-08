@@ -20,7 +20,7 @@ const mockData = [
     title: "Crispy Chicken",
     paragraph: "Chicken breast, chilli sauce, tomatoes, pickles, coleslaw",
     rating: 5,
-    price: 99.15,
+    price: 99,
   },
   {
     id: "0002",
@@ -28,7 +28,7 @@ const mockData = [
     title: "Ultimate Bacon",
     paragraph: "House patty, cheddar cheese, bacon, onion, mustard",
     rating: 4.5,
-    price: 99.32,
+    price: 99,
   },
   {
     id: "0003",
@@ -36,15 +36,15 @@ const mockData = [
     title: "Black Sheep",
     paragraph: "American cheese, tomato relish, avocado, lettuce, red onion",
     rating: 4,
-    price: 69.15,
+    price: 121,
   },
   {
     id: "0004",
     image: Image4,
     title: "Vegan Burger",
     paragraph: "House patty, cheddar cheese, bacon, onion, mustard",
-    rating: 3.5,
-    price: 99.25,
+    rating: 5,
+    price: 199,
   },
   {
     id: "0005",
@@ -52,7 +52,7 @@ const mockData = [
     title: "Double Burger",
     paragraph: "2 patties, cheddar cheese, mustard, pickles, tomatoes",
     rating: 3.0,
-    price: 59.25,
+    price: 151,
   },
   {
     id: "0006",
@@ -60,7 +60,7 @@ const mockData = [
     title: "Turkey Burger",
     paragraph: "Turkey, cheddar cheese, onion, lettuce, tomatoes, pickles",
     rating: 3,
-    price: 79.18,
+    price: 221,
   },
   {
     id: "0007",
@@ -68,7 +68,7 @@ const mockData = [
     title: "Smokey House",
     paragraph: "patty, cheddar cheese, onion, lettuce, tomatoes, pickles",
     rating: 2.5,
-    price: 99.19,
+    price: 99,
   },
   {
     id: "0008",
@@ -76,7 +76,7 @@ const mockData = [
     title: "Classic Burger",
     paragraph: "cheddar cheese, ketchup, mustard, pickles, onion",
     rating: 2.0,
-    price: 89.12,
+    price: 89,
   },
 
 ];
@@ -111,7 +111,7 @@ const Section3 = () => {
           <Col lg={{ span: 8, offset: 2 }} className='text-center mb-5'>
 
             <h2 className='title'>OUR CRAZY BURGERS</h2>
-            <p className=' para'>Aliquam a augue suscipit, luctus Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ad?</p>
+            <p className=' para'>Indulge in our unique and exciting burger creations, where flavors collide for an unforgettable taste experience.</p>
 
 
           </Col>

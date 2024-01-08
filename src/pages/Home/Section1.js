@@ -6,7 +6,7 @@ import '../../styles/Home/Section1.css'
 
 const Section1 = () => {
   return (
-    <section className="hero_section">
+    <section className="hero_section" id='home'>
       <Container>
         <Row>
           <Col lg={7} className='mb-5 mb-lg-0' >

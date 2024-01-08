@@ -10,17 +10,17 @@ const mockData = [
   {
     image: Pizza,
     title: "Original",
-    paragraph: `Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus integer primis in integer metus`,
+    paragraph: `Savor the classic and authentic flavor with our 'Original' selection. Each bite is a journey into rich and timeless tastes that make our offerings truly special. Experience the essence of tradition and quality in every bite`,
   },
   {
     image: Salad,
-    title: "Qualty Foods",
-    paragraph: `Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus integer primis in integer metus`,
+    title: "Quality Foods",
+    paragraph: `Indulge in a culinary delight with our "Quality Foods" collection. Immerse yourself in a world of premium ingredients and exceptional flavors. Each dish is crafted with the utmost care and dedication to bring you a dining experience that defines excellence in quality and taste.`,
   },
   {
     image: Delivery,
     title: "Fastest Delivery",
-    paragraph: `Porta semper lacus cursus, feugiat primis ultrice a ligula risus auctor an tempus feugiat dolor lacinia cubilia curae integer orci congue and metus integer primis in integer metus`,
+    paragraph: `Enjoy quick and reliable delivery with our "Fastest Delivery" service. Your favorite meals delivered to your doorstep swiftly, ensuring a convenient and timely dining experience.`,
   },
   // Add more mock data objects as needed
 ];
@@ -32,11 +32,9 @@ function Section2() {
         <Container>
           <Row>
             <Col lg={{ span: 8, offset: 2 }} className="text-center">
-              <h2>The burger tastes better when you eat it with your family</h2>
+              <h2>BURGERS ARE MORE ENJOYABLE WHEN SHARED WITH FAMILY</h2>
               <p>
-                Porta semper lacus cursus, feugiat primis ultrice a ligula risus
-                auctor an tempus feugiat dolor lacinia cubilia curae integer
-                orci congue and metus integer primis in integer metus
+                The burger tastes better when you eat it with your family. Always open to courses, with the first bites being delightful. Laughter leads the way, and the experience is enjoyable. The journey is filled with care, and everyone is involved in the first moments
               </p>
               <Link to="/" className="btn order_now btn_red mb-4">
                 Explore Full Menu
@@ -59,7 +57,7 @@ function Section2() {
                     />
                   </div>
                   <h4>{cardData.title}</h4>
-                  <p>{cardData.paragraph}</p>
+                  <p >{cardData.paragraph}</p>
                 </div>
               </Col>
             ))}

@@ -16,16 +16,11 @@ const Section4 = () => {
                               </Col>
                               <Col lg={6} className='px-5'>
                                    <h2>Nothing brings people together like a good burger</h2>
-                                   <p>Semper lacus cursus porta primis ligula risus tempus and
-                                        sagittis ipsum mauris lectus laoreet purus ipsum tempor enim
-                                        ipsum porta justo integer ultrice aligula lectus aenean magna
-                                        and pulvinar purus at pretium gravida</p>
+                                   <p>Gather around the table and savor the moments with our delectable burgers. An irresistible blend of flavors, bringing people together in the joy of shared culinary delight.</p>
                                    <ul>
-                                        <li><p>Fringilla risus, luctus mauris orci auctor purus euismod
-                                             pretium purus pretium ligula rutrum tempor sapien</p></li>
-                                        <li><p>Quaerat sodales sapien euismod purus blandit</p></li>
-                                        <li><p>Nemo ipsam egestas volute turpis dolores ut aliquam quaerat
-                                             sodales sapien undo pretium a purus mauris</p></li>
+                                        <li><p>Delight in every bite, creating memories with each mouthwatering flavor.</p></li>
+                                        <li><p>A culinary experience designed to unite friends and family alike.</p></li>
+                                        <li><p>Our burgers, a symbol of shared happiness and the joy of good company.</p></li>
                                    </ul>
 
                               </Col>
