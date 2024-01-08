@@ -1,0 +1,46 @@
+.promotion_section {
+   padding-top: 60px;
+   padding-bottom: 60px;
+   background-color: var(--light-gery);
+}
+
+.promotion_section h2 {
+   font-size: 3.25rem;
+   margin-bottom: 25px;
+}
+
+.promotion_section p {
+   font-size: 18px;
+}
+
+.promotion_section ul {
+   padding-left: 15px;
+}
+
+.bg_parallax_scroll {
+   background: url('../../assets//parallax/bg.jpg') no-repeat center center;
+   background-size: cover;
+   background-attachment: fixed;
+   width: 100%;
+   height: 700px;
+}
+
+
+@media screen and (max-width:1200px) {
+
+   .promotion_section h2 {
+      font-size: 2.5rem;
+
+   }
+}
+
+@media screen and (max-width:992px) {
+
+
+
+   .bg_parallax_scroll {
+
+      background-attachment: scroll;
+      height: 500px;
+   }
+}
