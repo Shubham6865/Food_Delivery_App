@@ -5,6 +5,8 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Provider } from 'react-redux';
 import Store from './Redux/Store';
 
+
+
 function App() {
   return (
     <Provider store={Store}>
@@ -15,6 +17,7 @@ function App() {
 
           </Routes>
         </Router>
+
       </div>
     </Provider>
   );
