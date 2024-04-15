@@ -9,6 +9,7 @@ import Section6 from './Section6'
 import Section7 from './Section7'
 
 const Home = () => {
+
   return (
     <>
 

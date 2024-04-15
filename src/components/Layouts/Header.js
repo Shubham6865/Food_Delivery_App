@@ -3,9 +3,15 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-scroll";
 import Logo from "../../assets/logo/logo.png";
 import "../../styles/Header.css";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
+
+  const items = useSelector((state) => state.cart)
+
+
+
 
   // Scroll Navbar
   const changeValueOnScroll = () => {
@@ -13,10 +19,12 @@ const Header = () => {
     scrollValue > 100 ? setNav(true) : setNav(false);
   };
 
+  const itemsCount = items.reduce((total, item) => total + item.quantity, 0);
+
   window.addEventListener("scroll", changeValueOnScroll);
 
   return (
-    <header>
+    <header  >
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -49,13 +57,14 @@ const Header = () => {
               <Nav.Link as={Link} to="contact" smooth>
                 Contact
               </Nav.Link>
-              <Nav.Link as={Link} to="home" smooth>
+              <Nav.Link as={Link} to="cart" smooth>
                 <div className="cart">
                   <i className="bi bi-bag fs-5 "></i>
-                  <em className="roundpoint">2</em>
+                  <em className="roundpoint">{itemsCount}</em>
                 </div>
 
               </Nav.Link>
+
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -65,3 +74,4 @@ const Header = () => {
 };
 
 export default Header;
+

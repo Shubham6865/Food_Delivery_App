@@ -12,6 +12,7 @@ import Card from '../../components/Layouts/Card';
 import '../../styles/Home/Section3.css';
 import { Link } from 'react-router-dom';
 
+
 // Mock Data Cards
 const mockData = [
   {
@@ -20,7 +21,7 @@ const mockData = [
     title: "Crispy Chicken",
     paragraph: "Chicken breast, chilli sauce, tomatoes, pickles, coleslaw",
     rating: 5,
-    price: 99,
+    price: 99.15,
   },
   {
     id: "0002",
@@ -28,7 +29,7 @@ const mockData = [
     title: "Ultimate Bacon",
     paragraph: "House patty, cheddar cheese, bacon, onion, mustard",
     rating: 4.5,
-    price: 99,
+    price: 99.32,
   },
   {
     id: "0003",
@@ -36,15 +37,15 @@ const mockData = [
     title: "Black Sheep",
     paragraph: "American cheese, tomato relish, avocado, lettuce, red onion",
     rating: 4,
-    price: 121,
+    price: 69.15,
   },
   {
     id: "0004",
     image: Image4,
     title: "Vegan Burger",
     paragraph: "House patty, cheddar cheese, bacon, onion, mustard",
-    rating: 5,
-    price: 199,
+    rating: 3.5,
+    price: 99.25,
   },
   {
     id: "0005",
@@ -52,7 +53,7 @@ const mockData = [
     title: "Double Burger",
     paragraph: "2 patties, cheddar cheese, mustard, pickles, tomatoes",
     rating: 3.0,
-    price: 151,
+    price: 59.25,
   },
   {
     id: "0006",
@@ -60,7 +61,7 @@ const mockData = [
     title: "Turkey Burger",
     paragraph: "Turkey, cheddar cheese, onion, lettuce, tomatoes, pickles",
     rating: 3,
-    price: 221,
+    price: 79.18,
   },
   {
     id: "0007",
@@ -68,7 +69,7 @@ const mockData = [
     title: "Smokey House",
     paragraph: "patty, cheddar cheese, onion, lettuce, tomatoes, pickles",
     rating: 2.5,
-    price: 99,
+    price: 99.19,
   },
   {
     id: "0008",
@@ -76,7 +77,7 @@ const mockData = [
     title: "Classic Burger",
     paragraph: "cheddar cheese, ketchup, mustard, pickles, onion",
     rating: 2.0,
-    price: 89,
+    price: 89.12,
   },
 
 ];
@@ -103,15 +104,16 @@ const renderRatingIcons = (rating) => {
   return stars;
 }
 
+
 const Section3 = () => {
   return (
-    <section className='menu_section' id='menu'>
+    <section className='menu_section'>
       <Container >
         <Row>
           <Col lg={{ span: 8, offset: 2 }} className='text-center mb-5'>
 
             <h2 className='title'>OUR CRAZY BURGERS</h2>
-            <p className=' para'>Indulge in our unique and exciting burger creations, where flavors collide for an unforgettable taste experience.</p>
+            <p className=' para'>Aliquam a augue suscipit, luctus Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, ad?</p>
 
 
           </Col>
@@ -119,7 +121,7 @@ const Section3 = () => {
         <Row>
           {mockData.map((cardData, index) => (
             <Card
-              key={index}
+              key={cardData.id}
               image={cardData.image}
               rating={cardData.rating}
               title={cardData.title}
@@ -127,6 +129,8 @@ const Section3 = () => {
               price={cardData.price}
               renderRatingIcons={renderRatingIcons}
             />
+
+
           ))}
         </Row>
         <Row className='pt-5'>
@@ -155,3 +159,4 @@ const Section3 = () => {
 }
 
 export default Section3
+
